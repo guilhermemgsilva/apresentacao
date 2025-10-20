@@ -88,7 +88,7 @@ window.OverworldMap = {
                 isPlayerControlled:true,
                 x:utils.withGrid(5),
                 y:utils.withGrid(6), 
-                src:"/images/characters/people/npcC.png"   
+                src:"/images/characters/people/fulano.png"   
             }),
             // npcA: new Person({
             //     x:utils.withGrid(7),
