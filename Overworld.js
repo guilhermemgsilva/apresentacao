@@ -29,7 +29,7 @@ class Overworld{
                 object.sprite.draw(this.ctx, cameraPerson)
             })
 
-            this.map.drawUpperImage(this.ctx, cameraPerson)
+            // this.map.drawUpperImage(this.ctx, cameraPerson)
             requestAnimationFrame(() => {
                 step()
             })

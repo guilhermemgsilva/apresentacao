@@ -74,7 +74,7 @@ class Sprite{
             frameX * 64 ,frameY * 64,
             64,64,
             x,y,
-            64,64
+            32,32
         )
         this.updateAnimationProgress()
     }
