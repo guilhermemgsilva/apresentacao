@@ -1332,14 +1332,14 @@ window.OverworldMap = {
         gameObjects: {
             hero: new Person({
                 isPlayerControlled: true,
-                x: utils.withGrid(17),
-                y: utils.withGrid(5),
+                x: utils.withGrid(9),
+                y: utils.withGrid(2),
                 src: "/images/characters/people/nav.png",
 
             })
         },
         cutsceneSpaces: {
-            [utils.asGridCoord(18, 5)]: [{
+            [utils.asGridCoord(9, 3)]: [{
                 events: [
 
                     { type: "changeMap", map: "logo" }
