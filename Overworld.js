@@ -54,10 +54,20 @@ class Overworld{
         this.map = new OverworldMap(mapConfig)
         this.map.overworld = this
         this.map.mountObjects()
+        const cena = this.map.overworld.map.lowerImage.attributes[0].nodeValue.split("/maps")[1].split("/")[1]
+        
+        
+        const audio = document.querySelector("#abertura")
+        if(cena === "inicio.png"){
+             audio.play()
+        }else if(cena == "house.png"){
+            audio.pause()
+        }
+        
     }
     init(){
         //aqui starta
-        this.startMap(window.OverworldMap.DemoRoom)
+        this.startMap(window.OverworldMap.preinicio)
 
         this.bindActionInput()
         this.bindHeroPositionCheck();
@@ -68,26 +78,7 @@ class Overworld{
         this.startGameLoop()
 
         this.map.startCutScene([
-            //saindo para o trabalho
-
-            {type:"textMessage", text: "Esse é o fulano, ele vive numa terra de fantasia, onde a paz reina, o reino de Banestia.", speaker: "Narrador"},
-            {type:"textMessage", text: "Ele sempre foi apenas um súdito do reino, nunca soube como o reino funcionava apenas gozava da duradoura harmonia", speaker: "Narrador"},
-            {type:"textMessage", text: "Agora ele além de súdito faz parte da equipe de colaboradores do reino e hoje é o seu primeiro dia de trabalho.", speaker: "Narrador"},
-            {who:"hero", type:"walk", direction:"down"},
-            {who:"hero", type:"walk", direction:"down"},
-            {who:"hero", type:"walk", direction:"left"},
-            {who:"hero", type:"walk", direction:"left"},
-            {who:"hero", type:"walk", direction:"left"},
-            {who:"hero", type:"walk", direction:"left"},
-            {who:"hero", type:"walk", direction:"down"},
-            {who:"hero", type:"walk", direction:"down"},
-            {who:"hero", type:"walk", direction:"down"},
-            {who:"hero", type:"walk", direction:"right"},
-            {who:"hero", type:"walk", direction:"right"},
-            {who:"hero", type:"walk", direction:"right"},
-            {who:"hero", type:"walk", direction:"right"},
-            {who:"hero", type:"walk", direction:"down"},
-            {who:"hero", type:"walk", direction:"down"},
+           
             
             
             

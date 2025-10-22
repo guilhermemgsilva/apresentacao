@@ -102,7 +102,33 @@ window.OverworldMap = {
                         { type: "changeMap", map: "Banestia" }
                     ]
                 }
-            ]
+            ],
+            [utils.asGridCoord(5, 7)]: [
+                {
+                    events: [
+                        // saindo para o trabalho
+
+                        { type: "textMessage", text: "Esse é o fulano, ele vive numa terra de fantasia, onde a paz reina, o reino de Banestia.", speaker: "Narrador" },
+                        { type: "textMessage", text: "Ele sempre foi apenas um súdito do reino, nunca soube como o reino funcionava apenas gozava da duradoura harmonia", speaker: "Narrador" },
+                        { type: "textMessage", text: "Agora ele além de súdito faz parte da equipe de colaboradores do reino e hoje é o seu primeiro dia de trabalho.", speaker: "Narrador" },
+                        
+                        { who: "hero", type: "walk", direction: "down" },
+                        { who: "hero", type: "walk", direction: "left" },
+                        { who: "hero", type: "walk", direction: "left" },
+                        { who: "hero", type: "walk", direction: "left" },
+                        { who: "hero", type: "walk", direction: "left" },
+                        { who: "hero", type: "walk", direction: "down" },
+                        { who: "hero", type: "walk", direction: "down" },
+                        { who: "hero", type: "walk", direction: "down" },
+                        { who: "hero", type: "walk", direction: "right" },
+                        { who: "hero", type: "walk", direction: "right" },
+                        { who: "hero", type: "walk", direction: "right" },
+                        { who: "hero", type: "walk", direction: "right" },
+                        { who: "hero", type: "walk", direction: "down" },
+                        { who: "hero", type: "walk", direction: "down" },
+                    ]
+                }
+            ],
         }
     },
     DemoRoom2: {
@@ -433,7 +459,7 @@ window.OverworldMap = {
                 isPlayerControlled: true,
                 x: utils.withGrid(8),
                 y: utils.withGrid(10),
-               
+
                 src: "/images/characters/people/fulano.png"
             })
             ,
@@ -1020,7 +1046,7 @@ window.OverworldMap = {
                 x: utils.withGrid(5),
                 y: utils.withGrid(14),
                 src: "/images/characters/people/fulano.png",
-                
+
             })
         },
         cutsceneSpaces: {
@@ -1041,7 +1067,7 @@ window.OverworldMap = {
                     { type: "textMessage", text: "A Espada Afiada mais que o Desenho Detalhado: O que importa é uma arma funcional, mesmo que ainda possa ser melhorada.", speaker: "Bancário" },
                     { type: "textMessage", text: "O Acordo Contínuo com o exécito mais que o Contrato Antigo: O exército deve ser ouvido durante a construção da defesa.", speaker: "Bancário" },
                     { type: "textMessage", text: "A Dança da Batalha mais que a Rota Pré-definida: A capacidade de mudar o plano de batalha no meio da luta.", speaker: "Bancário" },
-                    
+
                     { type: "textMessage", text: "Aqui temos o manifésto ágil em síntese.", speaker: "Narrador" },
                     { type: "textMessage", text: "Agilidade é a capacidade de um sistema, organização ou equipe de se adaptar e responder rapidamente à mudança.", speaker: "Narrador" },
                     { type: "textMessage", text: "O manifesto ágil fala sobre:", speaker: "Narrador" },
@@ -1049,10 +1075,10 @@ window.OverworldMap = {
                     { type: "textMessage", text: "Software em funcionamento mais que documentação abrangente.", speaker: "Narrador" },
                     { type: "textMessage", text: "Colaboração com o cliente mais que negociação de contratos.", speaker: "Narrador" },
                     { type: "textMessage", text: "Responder à mudança mais que seguir um plano.", speaker: "Narrador" },
-                    
+
                     { type: "textMessage", text: "O pergaminho tem dois rituais que aplicam a filosofia. Isso vai salvar Banestia!", speaker: "Bancário" },
                     { type: "textMessage", text: "E ainda tem um terceiro ritual maior para quando já houverem grupamentos ágeis.", speaker: "Bancário" },
-                    
+
                     { type: "textMessage", text: "O Scrum é um framework ágil que foca em ter um MVP e ir incrementando o produto em ciclos.", speaker: "Narrador" },
                     { type: "textMessage", text: "Pode ser oraganizado em ciclos, papéis fixos, e cerimônias", speaker: "Narrador" },
                     { type: "textMessage", text: "Os ciclos são chamados de Sprints (1 a 4 semanas)", speaker: "Narrador" },
@@ -1065,7 +1091,7 @@ window.OverworldMap = {
                     { type: "textMessage", text: "Sprint Planning que é o planejamento do que será feito no ciclo.", speaker: "Narrador" },
                     { type: "textMessage", text: "Sprint Review que é a demonstração do que foi feito para o cliente e feedback.", speaker: "Narrador" },
                     { type: "textMessage", text: "Retrospectiva que é quando o time reflete sobre como trabalhar melhor.", speaker: "Narrador" },
-                    
+
                     { type: "textMessage", text: "O Kanban é também um framework ágil", speaker: "Narrador" },
                     { type: "textMessage", text: "O trabalho é visualizado em um quadro com colunas que representam os estágios do processo.", speaker: "Narrador" },
                     { type: "textMessage", text: "Os estágios do processo são (A Fazer, Fazendo, Testando, Feito).", speaker: "Narrador" },
@@ -1073,10 +1099,10 @@ window.OverworldMap = {
                     { type: "textMessage", text: "Tem um limite máximo de tarefas que podem estar em andamento em cada coluna.(WIP)", speaker: "Narrador" },
                     { type: "textMessage", text: "O foco principal é medir e otimizar o tempo que uma tarefa leva do início ao fim", speaker: "Narrador" },
                     { type: "textMessage", text: "Mudanças são bem-vindas a qualquer momento", speaker: "Narrador" },
-                    
+
                     { type: "textMessage", text: "O Scaled Agile Framework (SAFe) é um framework ágil. ", speaker: "Narrador" },
                     { type: "textMessage", text: "Esse framework  permite que organizações grandes e complexas apliquem a agilidade em escala.", speaker: "Narrador" },
-                    
+
                     { type: "textMessage", text: "Enquanto Scrum e Kanban funcionam bem para equipes pequenas , o SAFe resolve o desafio de alinhamento e coordenação.", speaker: "Narrador" },
                     { type: "textMessage", text: "O SAFe garante que a estratégia da organização esteja alinhada com o trabalho que cada equipe está fazendo. ", speaker: "Narrador" },
                     { type: "textMessage", text: "Ele transforma a organização de uma coleção de equipes ágeis em uma rede de valor.", speaker: "Narrador" },
@@ -1099,13 +1125,13 @@ window.OverworldMap = {
 
 
 
-                    
+
 
                 ]
             }],
             [utils.asGridCoord(5, 15)]: [{
                 events: [
-                    {type:"changeMap", map:"BanestiaAgil"}
+                    { type: "changeMap", map: "BanestiaAgil" }
                 ]
             }
             ]
@@ -1116,12 +1142,12 @@ window.OverworldMap = {
         lowerSrc: "/images/maps/map-mundo.png",
         // upperSrc:"/images/maps/KitchenUpper.png",
         gameObjects: {
-           
+
             hero: new Person({
                 isPlayerControlled: true,
                 x: utils.withGrid(19),
                 y: utils.withGrid(10),
-                
+
                 src: "/images/characters/people/heroP.png"
             })
             ,
@@ -1188,10 +1214,10 @@ window.OverworldMap = {
             })
         },
         cutsceneSpaces: {
-            
+
             [utils.asGridCoord(19, 11)]: [{
                 events: [
-                    
+
                     { type: "textMessage", text: "Olha eu to diferente... eu me sinto...", speaker: "Bancário" },
                     { type: "textMessage", text: "Go go Power Ranger.", speaker: "Bancário" },
                     { type: "textMessage", text: "Agora eu vou salvar Banestia.", speaker: "Bancário" },
@@ -1209,7 +1235,7 @@ window.OverworldMap = {
                     { who: "hero", type: "walk", direction: "down" },
                     { who: "hero", type: "walk", direction: "down" },
                     { who: "hero", type: "walk", direction: "down" },
-                    
+
                     { who: "hero", type: "walk", direction: "right" },
                     { who: "hero", type: "walk", direction: "right" },
                     { who: "hero", type: "walk", direction: "right" },
@@ -1223,10 +1249,10 @@ window.OverworldMap = {
                     { who: "hero", type: "walk", direction: "right" },
                     { who: "hero", type: "walk", direction: "right" },
                     { who: "hero", type: "walk", direction: "right" },
-                    
+
                     { who: "hero", type: "walk", direction: "up" },
                     { who: "hero", type: "walk", direction: "up" },
-                    
+
                     { who: "hero", type: "walk", direction: "right" },
                     { who: "hero", type: "walk", direction: "right" },
                     { who: "hero", type: "walk", direction: "right" },
@@ -1246,18 +1272,18 @@ window.OverworldMap = {
                     { who: "hero", type: "walk", direction: "right" },
                     { who: "hero", type: "walk", direction: "right" },
                     { who: "hero", type: "walk", direction: "right" },
-                     { who: "hero", type: "walk", direction: "up" },
-                    { who: "hero", type: "walk", direction: "right" },                    
+                    { who: "hero", type: "walk", direction: "up" },
+                    { who: "hero", type: "walk", direction: "right" },
                     { who: "hero", type: "walk", direction: "right" },
                     { who: "hero", type: "walk", direction: "right" },
                     { who: "hero", type: "walk", direction: "down" },
                     { who: "hero", type: "walk", direction: "right" },
                     { who: "hero", type: "walk", direction: "right" },
                     { who: "hero", type: "walk", direction: "right" },
-                    { who: "hero", type: "stand", direction: "up", time:800 },
-                    { who: "hero", type: "stand", direction: "down", time:800 },
-               
-                    { who: "hero", type: "stand", direction: "right", time:800 },
+                    { who: "hero", type: "stand", direction: "up", time: 800 },
+                    { who: "hero", type: "stand", direction: "down", time: 800 },
+
+                    { who: "hero", type: "stand", direction: "right", time: 800 },
 
                     { who: "enemy1", type: "walk", direction: "right" },
                     { who: "enemy1", type: "walk", direction: "right" },
@@ -1269,9 +1295,92 @@ window.OverworldMap = {
                     { who: "enemy1", type: "walk", direction: "right" },
                 ]
             }],
-            
+
         }
+    },
+
+    preinicio: {
+        lowerSrc: "/images/maps/preinicio.png",
+        // upperSrc:"/images/maps/KitchenUpper.png",
+        gameObjects: {
+            hero: new Person({
+                isPlayerControlled: true,
+                x: utils.withGrid(17),
+                y: utils.withGrid(5),
+                src: "/images/characters/people/nav.png",
+
+            })
         },
-        
-    }
+        cutsceneSpaces: {
+            [utils.asGridCoord(18, 5)]: [{
+                events: [
+
+                    { type: "changeMap", map: "Inicio" }
+                ]
+            }],
+            [utils.asGridCoord(5, 15)]: [{
+                events: [
+
+                ]
+            }
+            ]
+        }
+    },
+    Inicio: {
+        lowerSrc: "/images/maps/inicio.png",
+        // upperSrc:"/images/maps/KitchenUpper.png",
+        gameObjects: {
+            hero: new Person({
+                isPlayerControlled: true,
+                x: utils.withGrid(17),
+                y: utils.withGrid(5),
+                src: "/images/characters/people/nav.png",
+
+            })
+        },
+        cutsceneSpaces: {
+            [utils.asGridCoord(18, 5)]: [{
+                events: [
+
+                    { type: "changeMap", map: "logo" }
+                ]
+            }],
+            [utils.asGridCoord(5, 15)]: [{
+                events: [
+
+                ]
+            }
+            ]
+        }
+    },
+    logo: {
+        lowerSrc: "/images/maps/logoa.png",
+        // upperSrc:"/images/maps/KitchenUpper.png",
+        gameObjects: {
+            hero: new Person({
+                isPlayerControlled: true,
+                x: utils.withGrid(6),
+                y: utils.withGrid(6),
+                src: "/images/characters/people/nav.png",
+
+            })
+        },
+        cutsceneSpaces: {
+            [utils.asGridCoord(6, 7)]: [{
+                events: [
+
+                    { type: "changeMap", map: "DemoRoom" }
+                ]
+            }],
+            [utils.asGridCoord(5, 15)]: [{
+                events: [
+
+                ]
+            }
+            ]
+        }
+    },
+
+
+}
 
