@@ -56,6 +56,7 @@ class Overworld{
         this.map.mountObjects()
     }
     init(){
+        //aqui starta
         this.startMap(window.OverworldMap.DemoRoom)
 
         this.bindActionInput()
@@ -67,9 +68,28 @@ class Overworld{
         this.startGameLoop()
 
         this.map.startCutScene([
+            //saindo para o trabalho
+
             {type:"textMessage", text: "Esse é o fulano, ele vive numa terra de fantasia, onde a paz reina, o reino de Banestia.", speaker: "Narrador"},
             {type:"textMessage", text: "Ele sempre foi apenas um súdito do reino, nunca soube como o reino funcionava apenas gozava da duradoura harmonia", speaker: "Narrador"},
             {type:"textMessage", text: "Agora ele além de súdito faz parte da equipe de colaboradores do reino e hoje é o seu primeiro dia de trabalho.", speaker: "Narrador"},
+            {who:"hero", type:"walk", direction:"down"},
+            {who:"hero", type:"walk", direction:"down"},
+            {who:"hero", type:"walk", direction:"left"},
+            {who:"hero", type:"walk", direction:"left"},
+            {who:"hero", type:"walk", direction:"left"},
+            {who:"hero", type:"walk", direction:"left"},
+            {who:"hero", type:"walk", direction:"down"},
+            {who:"hero", type:"walk", direction:"down"},
+            {who:"hero", type:"walk", direction:"down"},
+            {who:"hero", type:"walk", direction:"right"},
+            {who:"hero", type:"walk", direction:"right"},
+            {who:"hero", type:"walk", direction:"right"},
+            {who:"hero", type:"walk", direction:"right"},
+            {who:"hero", type:"walk", direction:"down"},
+            {who:"hero", type:"walk", direction:"down"},
+            
+            
             
         ])
 

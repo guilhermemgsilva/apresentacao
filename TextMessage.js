@@ -12,7 +12,7 @@ class TextMessage{
 
         this.element.innerHTML = (`
         <p class="TextMessage_p"><b>${this.speaker}</b>: ${this.text}</p>
-        <button class="TextMessage_button">Next</button>
+        <button class="TextMessage_button">Próximo</button>
         `)
 
         this.element.querySelector("button").addEventListener("click",()=>{
