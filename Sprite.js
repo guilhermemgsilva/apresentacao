@@ -23,7 +23,7 @@ class Sprite{
             "walk-left": [[0,9], [1,9], [2,9], [3,9],[4,9],[5,9],[6,9],[7,9],[8,9]],
             "walk-right": [[0,11], [1,11], [2,11], [3,11],[4,11],[5,11],[6,11],[7,11],[8,11]],
             "walk-down": [[0,10], [1,10], [2,10], [3,10],[4,10],[5,10],[6,10],[7,10],[8,10]],
-            "t-up":[[0,4],[1,4],[2,4],[3,4],[4,4],[5,4],[6,4],[7,4]]
+            "dead":[[0,1]]
         }
         this.currentAnimation = config.currentAnimation || "idle-down"
         this.currentAnimationFrame = 0
@@ -66,6 +66,7 @@ class Sprite{
     draw(ctx, cameraPerson){
         const x = this.gameObject.x - 8 + utils.withGrid(10.5) - cameraPerson.x
         const y = this.gameObject.y - 18 + utils.withGrid(6) - cameraPerson.y
+        
 
         // this.isShadowLoaded && ctx.drawImage(this.shadow,x,y)
 

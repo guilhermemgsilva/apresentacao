@@ -18,6 +18,7 @@ class GameObject {
     mount(map){
         this.isMounted = true;
         map.addWall(this.x, this.y)
+        this.map = map; // ← importante
 
         setTimeout(()=>{
             this.doBehaviorEvent(map)

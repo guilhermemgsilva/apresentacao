@@ -17,6 +17,7 @@ class Person extends GameObject {
         if (this.movingProgressRemaining > 0) {
             this.updatePosition();
         } else {
+
             if (!state.map.isCutScenePlaying && this.isPlayerControlled && state.arrow) {
                 this.startBehavior(state, {
                     type: "walk",
@@ -32,26 +33,26 @@ class Person extends GameObject {
     startBehavior(state, behavior) {
         this.direction = behavior.direction
         if (behavior.type === "walk") {
-            if (state.map.isSpaceTaken(this.x, this.y, this.direction)) { 
-                behavior.retry && setTimeout(()=>{
+            if (state.map.isSpaceTaken(this.x, this.y, this.direction)) {
+                behavior.retry && setTimeout(() => {
                     this.startBehavior(state, behavior)
-                },10)
+                }, 10)
                 return
-             }
+            }
 
             state.map.moveWall(this.x, this.y, this.direction)
             this.movingProgressRemaining = 16
             this.updateSprite(state)
 
         }
-        if(behavior.type === "stand"){
+        if (behavior.type === "stand") {
             this.isStanding = true
-            setTimeout(()=>{
-                utils.emitEvent("PersonStandComplete",{
+            setTimeout(() => {
+                utils.emitEvent("PersonStandComplete", {
                     whoId: this.id
                 })
-            this.isStanding = false
-            },behavior.time)
+                this.isStanding = false
+            }, behavior.time)
 
         }
     }
@@ -61,8 +62,8 @@ class Person extends GameObject {
         this[property] += change
         this.movingProgressRemaining -= 1
 
-        if(this.movingProgressRemaining === 0){
-            
+        if (this.movingProgressRemaining === 0) {
+
             utils.emitEvent("PersonWalkingComplete", {
                 whoId: this.id
             })
@@ -80,4 +81,19 @@ class Person extends GameObject {
 
 
     }
+
+    die() {
+    this.dead = true;
+    this.movingProgressRemaining = 0;
+    this.sprite.setAnimation("dead");
+
+    this.isPlayerControlled = false;
+
+    setTimeout(() => {
+        if (this.map && this.map.gameObjects && this.map.gameObjects[this.id]) {
+            delete this.map.gameObjects[this.id];
+        }
+    }, 1); // tempo da animação
+}
+
 }
