@@ -108,9 +108,9 @@ window.OverworldMap = {
                     events: [
                         // saindo para o trabalho
 
-                        { type: "textMessage", text: "Esse é o Bacário, ele vive numa terra de fantasia, onde a paz reina, o reino de Banéstia.", speaker: "Narrador" },
-                        { type: "textMessage", text: "Ele era  apenas um súdito do reino, nunca soube como o reino funcionava apenas gozava da duradoura harmonia", speaker: "Narrador" },
-                        { type: "textMessage", text: "Agora ele além de súdito, faz parte da equipe de colaboradores do reino e hoje é o seu primeiro dia de trabalho.", speaker: "Narrador" },
+                        { type: "textMessage", text: "Esse é o Bacário, ele vive numa terra de fantasia, onde a paz reina: o reino de Banéstia.", speaker: "Narrador" },
+                        { type: "textMessage", text: "Ele era  apenas um súdito do reino, nunca soube como o reino funcionava, apenas gozava da duradoura harmonia.", speaker: "Narrador" },
+                        { type: "textMessage", text: "Agora, além de súdito, ele faz parte da equipe de colaboradores do reino e hoje é o seu primeiro dia de trabalho.", speaker: "Narrador" },
 
                         { who: "hero", type: "walk", direction: "down" },
                         { who: "hero", type: "walk", direction: "left" },
@@ -239,8 +239,8 @@ window.OverworldMap = {
                         { who: "hero", type: "stand", direction: "right" },
                         { who: "tiao", type: "stand", direction: "left" },
 
-                        { type: "textMessage", text: "Bom dia Guarda Tião, meu nome é Bancário e hoje é o meu primeiro dia.", speaker: "Bancário" },
-                        { type: "textMessage", text: "Bom dia Bancário, hoje vamos ficar de guarda no portão da cidade.", speaker: "Guarda Tião" },
+                        { type: "textMessage", text: "Bom dia, Guarda Tião! Meu nome é Bancário e hoje é o meu primeiro dia.", speaker: "Bancário" },
+                        { type: "textMessage", text: "Bom dia, Bancário! Hoje vamos ficar de guarda no portão da cidade.", speaker: "Guarda Tião" },
                     ]
                 }],
             [utils.asGridCoord(49, 25)]: [{
@@ -280,11 +280,11 @@ window.OverworldMap = {
                     { who: "hero", type: "walk", direction: "up" },
                     { who: "hero", type: "walk", direction: "up" },
                     { who: "hero", type: "stand", direction: "down" },
-                    { type: "textMessage", text: "HA HA HA, DÁ PRA VER QUE SEU PRIMEIRO DIA!", speaker: "Guarda Tião" },
+                    { type: "textMessage", text: "HA HA HA, DÁ PRA VER QUE É SEU PRIMEIRO DIA!", speaker: "Guarda Tião" },
                     { type: "textMessage", text: "Calma, é só uma demanda.", speaker: "Guarda Tião" },
-                    { type: "textMessage", text: "Elas aparece de vez em quando, mas nós temos um procedimento pra cuidar delas.", speaker: "Guarda Tião" },
+                    { type: "textMessage", text: "Elas aparecem de vez em quando, mas nós temos um procedimento para cuidar delas.", speaker: "Guarda Tião" },
                     { type: "textMessage", text: "É a nossa maravilhosa Corrente de Comando Imutável.", speaker: "Guarda Tião" },
-                    { type: "textMessage", text: "Encontre o capitão, avisa sobre essa demanda.", speaker: "Guarda Tião" },
+                    { type: "textMessage", text: "Encontre o Capitão, avise sobre essa demanda.", speaker: "Guarda Tião" },
                     { type: "textMessage", text: "Ele vai te explicar os próximos passos.", speaker: "Guarda Tião" },
 
 
@@ -392,19 +392,19 @@ window.OverworldMap = {
                 events: [
                     { who: "hero", type: "stand", direction: "up" },
                     { who: "capitao", type: "stand", direction: "down" },
-                    { type: "textMessage", text: "Capitão temos uma demanda chegando.", speaker: "Bancário" },
+                    { type: "textMessage", text: "Capitão, temos uma demanda chegando.", speaker: "Bancário" },
                     { type: "textMessage", text: "Vou convocar o conselho para definir a estratégia de defesa.", speaker: "Capitão" },
                     { type: "textMessage", text: "Precisamos de um documento com os mínimos detalhes para começarmos a agir.", speaker: "Capitão" },
                     { type: "textMessage", text: "Mas Capitão, não podemos começar a mobilizar as forças?", speaker: "Bancário" },
-                    { type: "textMessage", text: "Só podemos começar a agir depois de o conselho listar todos os perigos e soluções possíveis.", speaker: "Capitão" },
-                    { type: "textMessage", text: "Eles criam um modelo de defesa, então atacamos de uma vez, isso será a validação da estratégia já na prática.", speaker: "Capitão" },
-                    { type: "textMessage", text: "Volte pro seu posto e aguarde.", speaker: "Capitão" },
+                    { type: "textMessage", text: "Só podemos começar a agir depois que o conselho listar todos os perigos e soluções possíveis.", speaker: "Capitão" },
+                    { type: "textMessage", text: "Eles criam um modelo de defesa, então atacamos de uma vez. Isso será a validação da estratégia já na prática.", speaker: "Capitão" },
+                    { type: "textMessage", text: "Volte para o seu posto e aguarde.", speaker: "Capitão" },
 
                     { type: "textMessage", text: "Aqui nós estamos falando do Modelo em Cascata.", speaker: "Narrador" },
-                    { type: "textMessage", text: "No Modelo em cascata o processo flui de cima para baixo", speaker: "Narrador" },
-                    { type: "textMessage", text: "O processo é dividido em fases e não se pode iniciar a próxima fase antes da primeira acabar.", speaker: "Narrador" },
+                    { type: "textMessage", text: "No Modelo em cascata, o processo flui de cima para baixo", speaker: "Narrador" },
+                    { type: "textMessage", text: "O processo é dividido em fases e não se pode iniciar a próxima fase antes da anterior acabar.", speaker: "Narrador" },
                     { type: "textMessage", text: "O levantamento dos requisitos é feito todo de uma só vez e no início.", speaker: "Narrador" },
-                    { type: "textMessage", text: "Isso gera uma documentação extensa que torna o contrato de trabalho rígido para todas as fases.", speaker: "Narrador" },
+                    { type: "textMessage", text: "Isso gera uma documentação extensa, o que torna o contrato de trabalho rígido para todas as fases.", speaker: "Narrador" },
                 ]
             }],
             [utils.asGridCoord(5, 15)]: [{
@@ -437,10 +437,10 @@ window.OverworldMap = {
                 events: [
                     { who: "hero", type: "stand", direction: "up" },
                     { who: "capitao", type: "stand", direction: "down" },
-                    { type: "textMessage", text: "Capitão temos várias demandas, elas são diferentes, parecem mais fortes e e estão chegando rápido.", speaker: "Bancário" },
+                    { type: "textMessage", text: "Capitão, temos várias demandas! Elas são diferentes, parecem mais fortes e estão chegando rápido!", speaker: "Bancário" },
                     { type: "textMessage", text: "Vá depressa à sala de treinamento.", speaker: "Capitão" },
-                    { type: "textMessage", text: " Lá você verá uma folha de papel com a filosofia manifesto que os sábios escreveram para esse momento.", speaker: "Capitão" },
-                    { type: "textMessage", text: "Medite nessa filosofia.", speaker: "Capitão" },
+                    { type: "textMessage", text: "Lá você verá uma folha de papel com a filosofia manifesto que os sábios escreveram para esse momento.", speaker: "Capitão" },
+                    { type: "textMessage", text: "Medite nessa filosofia!", speaker: "Capitão" },
 
                 ]
             }],
@@ -597,7 +597,7 @@ window.OverworldMap = {
             }],
             [utils.asGridCoord(51, 23)]: [{
                 events: [
-                    { type: "textMessage", text: "Alguns dias depois", speaker: "Narrador" },
+                    { type: "textMessage", text: "Alguns dias depois...", speaker: "Narrador" },
                     { who: "gomes", type: "walk", direction: "down" },
                     { who: "soares", type: "walk", direction: "down" },
                     { who: "kovalski", type: "walk", direction: "down" },
@@ -687,7 +687,7 @@ window.OverworldMap = {
                     { who: "enemy", type: "walk", direction: "right" },
                     { who: "enemy", type: "walk", direction: "right" },
 
-                    { type: "textMessage", text: "Dessa vez a demanda foi resolvido com essa estratégia.", speaker: "Narrador" },
+                    { type: "textMessage", text: "Mais umas vez a demanda foi resolvida com a nossa Corrente de Comando Imutável.", speaker: "Exército" },
                 ]
             }],
             [utils.asGridCoord(52, 21)]: [{
@@ -815,7 +815,7 @@ window.OverworldMap = {
             }],
             [utils.asGridCoord(52, 23)]: [{
                 events: [
-                    { type: "textMessage", text: "Olha Tião, dessa vez o nosso jeito não vai resolver!", speaker: "Bancário" },
+                    { type: "textMessage", text: "Olha Tião, dessa vez o nosso jeito tradicional não vai resolver!", speaker: "Bancário" },
                     { who: "enemy1", type: "walk", direction: "left" },
                     { who: "enemy2", type: "walk", direction: "left" },
                     { who: "enemy3", type: "walk", direction: "left" },
@@ -837,6 +837,10 @@ window.OverworldMap = {
                     { who: "enemy5", type: "walk", direction: "left" },
                     { who: "enemy6", type: "walk", direction: "left" },
 
+                    { who: "tiao", type: "walk", direction: "left" },
+                    { who: "tiao", type: "walk", direction: "left" },
+                    { who: "tiao", type: "walk", direction: "right" },
+                    { who: "tiao", type: "walk", direction: "right" },
                     { who: "tiao", type: "walk", direction: "left" },
                     { who: "tiao", type: "walk", direction: "left" },
                     { who: "tiao", type: "walk", direction: "right" },
@@ -848,8 +852,8 @@ window.OverworldMap = {
 
                     { type: "textMessage", text: "ai meu Deus!", speaker: "Tião" },
                     { type: "textMessage", text: "AI Meu Deus!...", speaker: "Tião" },
-                    { type: "textMessage", text: "AI Meu DEUS!.....", speaker: "Tião" },
-                    { type: "textMessage", text: "Corra até o capitão e informe.", speaker: "Tião" },
+                    { type: "textMessage", text: "AI MEU DEUS!.....", speaker: "Tião" },
+                    { type: "textMessage", text: "CORRA ATÉ O CAPITÃO E O INFORME.", speaker: "Tião" },
                     { type: "textMessage", text: "OK!", speaker: "Bancário" },
 
                     { who: "hero", type: "walk", direction: "left" },
@@ -1076,53 +1080,53 @@ window.OverworldMap = {
                     { who: "hero", type: "walk", direction: "up" },
                     { who: "hero", type: "walk", direction: "up" },
 
-                    { type: "textMessage", text: "Esse é o pergaminho do manifesto ágil, está escrito:", speaker: "Bancário" },
+                    { type: "textMessage", text: "Esse é o pergaminho do Manifesto Ágil. Nele está escrito:", speaker: "Bancário" },
                     { type: "textMessage", text: "A Voz do Guerreiro mais que o Livro de Regras: Valorizar a comunicação e a colaboração entre os membros da defesa.", speaker: "Bancário" },
                     { type: "textMessage", text: "A Espada Afiada mais que o Desenho Detalhado: O que importa é uma arma funcional, mesmo que ainda possa ser melhorada.", speaker: "Bancário" },
                     { type: "textMessage", text: "O Acordo Contínuo com o exército mais que o Contrato Antigo: O exército deve ser ouvido durante a construção da defesa.", speaker: "Bancário" },
                     { type: "textMessage", text: "A Dança da Batalha mais que a Rota Pré-definida: A capacidade de mudar o plano de batalha no meio da luta.", speaker: "Bancário" },
 
-                    { type: "textMessage", text: "Aqui temos o manifésto ágil.", speaker: "Narrador" },
+                    { type: "textMessage", text: "Aqui temos o Manifésto Ágil.", speaker: "Narrador" },
                     { type: "textMessage", text: "Agilidade é a capacidade de um sistema, organização ou equipe de se adaptar e responder rapidamente à mudança.", speaker: "Narrador" },
-                    { type: "textMessage", text: "O manifesto ágil fala sobre:", speaker: "Narrador" },
+                    { type: "textMessage", text: "O Manifesto Ágil fala sobre:", speaker: "Narrador" },
                     { type: "textMessage", text: "Indivíduos e iterações mais que processos e ferramentas.", speaker: "Narrador" },
                     { type: "textMessage", text: "Software em funcionamento mais que documentação abrangente.", speaker: "Narrador" },
                     { type: "textMessage", text: "Colaboração com o cliente mais que negociação de contratos.", speaker: "Narrador" },
                     { type: "textMessage", text: "Responder à mudança mais que seguir um plano.", speaker: "Narrador" },
 
                     { type: "textMessage", text: "O pergaminho tem dois rituais que aplicam a filosofia. Isso vai salvar Banéstia!", speaker: "Bancário" },
-                    { type: "textMessage", text: "E ainda tem um terceiro ritual maior para quando já houverem grupamentos ágeis.", speaker: "Bancário" },
+                    { type: "textMessage", text: "E ainda tem um terceiro ritual maior, para quando já houverem grupamentos ágeis.", speaker: "Bancário" },
 
                     { type: "textMessage", text: "O Scrum é um framework ágil que foca em ter um MVP e ir incrementando o produto em ciclos.", speaker: "Narrador" },
                     { type: "textMessage", text: "Pode ser oraganizado em ciclos, papéis fixos, e cerimônias.", speaker: "Narrador" },
                     { type: "textMessage", text: "Os ciclos são chamados de Sprints (1 a 4 semanas).", speaker: "Narrador" },
                     { type: "textMessage", text: "Os papéis fixos são:", speaker: "Narrador" },
-                    { type: "textMessage", text: "O PO (Product Owner) que nesse contexto se torna a voz do cliente.", speaker: "Narrador" },
-                    { type: "textMessage", text: "O Scrum Master que vem a ser um facilitador.", speaker: "Narrador" },
-                    { type: "textMessage", text: "E por último o time de desenvolvimento.", speaker: "Narrador" },
+                    { type: "textMessage", text: "O PO (Product Owner), que nesse contexto se torna a voz do cliente.", speaker: "Narrador" },
+                    { type: "textMessage", text: "O Scrum Master, que vem a ser um facilitador.", speaker: "Narrador" },
+                    { type: "textMessage", text: "E por último, o time de desenvolvimento.", speaker: "Narrador" },
                     { type: "textMessage", text: "E as cerimônias são:", speaker: "Narrador" },
-                    { type: "textMessage", text: "Daily Scrum que é uma reunião diária sobre: O que fiz? O que farei? O que me impede?", speaker: "Narrador" },
-                    { type: "textMessage", text: "Sprint Planning que é o planejamento do que será feito no ciclo.", speaker: "Narrador" },
-                    { type: "textMessage", text: "Sprint Review que é a demonstração do que foi feito para o cliente e feedback.", speaker: "Narrador" },
-                    { type: "textMessage", text: "Retrospectiva que é quando o time reflete sobre como trabalhar melhor.", speaker: "Narrador" },
+                    { type: "textMessage", text: "Daily Scrum: uma reunião diária sobre: O que fiz? O que farei? O que me impede?", speaker: "Narrador" },
+                    { type: "textMessage", text: "Sprint Planning: planejamento do que será feito no ciclo.", speaker: "Narrador" },
+                    { type: "textMessage", text: "Sprint Review: demonstração do que foi feito para o cliente e feedback.", speaker: "Narrador" },
+                    { type: "textMessage", text: "Retrospectiva: reunião onde o time reflete sobre como trabalhar melhor.", speaker: "Narrador" },
 
                     { type: "textMessage", text: "O Kanban é também um framework ágil.", speaker: "Narrador" },
                     { type: "textMessage", text: "O trabalho é visualizado em um quadro com colunas que representam os estágios do processo.", speaker: "Narrador" },
-                    { type: "textMessage", text: "Os estágios do processo são (A Fazer, Fazendo, Testando, Feito).", speaker: "Narrador" },
+                    { type: "textMessage", text: "Os estágios do processo são: A Fazer, Fazendo, Testando e Feito.", speaker: "Narrador" },
 
-                    { type: "textMessage", text: "Tem um limite máximo de tarefas que podem estar em andamento em cada coluna.(WIP)", speaker: "Narrador" },
+                    { type: "textMessage", text: "Há um limite máximo de tarefas que podem estar em andamento em cada coluna (WIP).", speaker: "Narrador" },
                     { type: "textMessage", text: "O foco principal é medir e otimizar o tempo que uma tarefa leva do início ao fim.", speaker: "Narrador" },
                     { type: "textMessage", text: "Mudanças são bem-vindas a qualquer momento.", speaker: "Narrador" },
                     { type: "textMessage", text: "Só para reforçar, vamos fazer uma pequena comparação.", speaker: "Narrador" },
                     
                     { type: "textMessage", text: "O Scrum é iterativo (ciclos). Sprints com duração definida.", speaker: "Narrador" },
                     { type: "textMessage", text: "O Kanban é contínuo. Entrega assim que pronto.", speaker: "Narrador" },
-                    { type: "textMessage", text: "No Scrum o limite é deifinido na Sprint Planning.", speaker: "Narrador" },
-                    { type: "textMessage", text: "No Kanban o limite é deifinido pela quantidade de WIP simultâneas.", speaker: "Narrador" },
-                    { type: "textMessage", text: "No Scrum os papéis são definidos (PO, SM e TD).", speaker: "Narrador" },
+                    { type: "textMessage", text: "No Scrum, o limite é definido na Sprint Planning.", speaker: "Narrador" },
+                    { type: "textMessage", text: "No Kanban, o limite é definido pela quantidade de WIP simultâneas.", speaker: "Narrador" },
+                    { type: "textMessage", text: "No Scrum, os papéis são definidos (PO, SM e TD).", speaker: "Narrador" },
                     { type: "textMessage", text: "No Kanban, não existem papéis formais.", speaker: "Narrador" },
-                    { type: "textMessage", text: "O Scrum aceita mudanças, desde que entre as Sprints.", speaker: "Narrador" },
-                    { type: "textMessage", text: "Já o Kanban, aceita mudanças a qualquer momento.", speaker: "Narrador" },
+                    { type: "textMessage", text: "O Scrum aceita mudanças, desde que planejadas entre as Sprints.", speaker: "Narrador" },
+                    { type: "textMessage", text: "Já o Kanban aceita mudanças a qualquer momento.", speaker: "Narrador" },
                     
                     { type: "textMessage", text: "Agora sobre o SAFe.", speaker: "Narrador" },
 
@@ -1133,15 +1137,17 @@ window.OverworldMap = {
                     { type: "textMessage", text: "Enquanto Scrum e Kanban funcionam bem para equipes pequenas, o SAFe resolve o desafio de alinhamento e coordenação.", speaker: "Narrador" },
                     { type: "textMessage", text: "O SAFe garante que a estratégia da organização esteja alinhada com o trabalho que cada equipe está fazendo. ", speaker: "Narrador" },
                     { type: "textMessage", text: "Ele transforma a organização de uma coleção de equipes ágeis para uma rede de valor.", speaker: "Narrador" },
-                    { type: "textMessage", text: "O ART é um time de times que trabalham em sincronia. ", speaker: "Narrador" },
+                    
                     { type: "textMessage", text: "O coração do SAFe é o Agile Release Train (ART), uma locomotiva ágil. ", speaker: "Narrador" },
+                    { type: "textMessage", text: "O ART é um conjunto de equipes ágeis que se sincronizam para entregar soluções maiores. ", speaker: "Narrador" },
+                    
                     { type: "textMessage", text: "O PI (Program Increment) é o evento mais importante. ", speaker: "Narrador" },
-                    { type: "textMessage", text: "É uma reunião de dois dias onde todos os membros do ART se reúnem.  para planejar o trabalho dos próximos 2 ou 3 meses. ", speaker: "Narrador" },
-                    { type: "textMessage", text: "Nessa reunião, planejam o trabalho dos próximos 2 ou 3 meses. ", speaker: "Narrador" },
-                    { type: "textMessage", text: "É o grande conselho de guerra. ", speaker: "Narrador" },
-                    { type: "textMessage", text: "E o RTE (Release Train Engineer) é o maestro da orquestra. ", speaker: "Narrador" },
+                    { type: "textMessage", text: "É uma reunião de dois dias onde todos os membros do ART se reúnem para planejar o trabalho dos próximos 2 ou 3 meses. ", speaker: "Narrador" },
+                    
+                    { type: "textMessage", text: "O PI é o grande conselho de guerra! ", speaker: "Narrador" },
+                    { type: "textMessage", text: "O RTE (Release Train Engineer) é o maestro dessa orquestra. ", speaker: "Narrador" },
                     { type: "textMessage", text: "Ele tem papel de coach e líder servidor. ", speaker: "Narrador" },
-                    { type: "textMessage", text: "Ele é o scrum master dos scrum masters. ", speaker: "Narrador" },
+                    { type: "textMessage", text: 'Ele é o "scrum master dos scrum masters". ', speaker: "Narrador" },
                     { type: "textMessage", text: "Ele é quem lidera o PI, coleta métricas e resolve impedimentos. ", speaker: "Narrador" },
 
                     { who: "hero", type: "walk", direction: "down" },
@@ -1249,9 +1255,9 @@ window.OverworldMap = {
             [utils.asGridCoord(19, 11)]: [{
                 events: [
 
-                    { type: "textMessage", text: "Olha eu to diferente... eu me sinto...", speaker: "Bancário" },
-                    { type: "textMessage", text: "Go go Power Ranger.", speaker: "Bancário" },
-                    { type: "textMessage", text: "Agora eu vou salvar Banéstia.", speaker: "Bancário" },
+                    { type: "textMessage", text: "Olha, eu to diferente... eu me sinto...", speaker: "Bancário" },
+                    { type: "textMessage", text: "Go go Power Ranger!", speaker: "Bancário" },
+                    { type: "textMessage", text: "Agora eu vou salvar Banéstia!", speaker: "Bancário" },
                     { who: "hero", type: "walk", direction: "down" },
                     { who: "hero", type: "walk", direction: "down" },
                     { who: "hero", type: "walk", direction: "down" },
@@ -1312,15 +1318,15 @@ window.OverworldMap = {
                     
 
 
-                    { type: "textMessage", text: "Nós não estamos conseguindo lidar com essas demandas.", speaker: "Exército" },
-                    { type: "textMessage", text: "Os métodos que nós conhecemos não irão funcionar.", speaker: "Exército" },
-                    { type: "textMessage", text: "Olha, o que é aquilo que chegou? É outra demanda?", speaker: "Exército" },
+                    { type: "textMessage", text: "Nós não estamos conseguindo lidar com essas demandas!", speaker: "Exército" },
+                    { type: "textMessage", text: "Os métodos que nós conhecemos não irão funcionar!", speaker: "Exército" },
+                    { type: "textMessage", text: "Olha! O que é aquilo que chegou? É outra demanda?", speaker: "Exército" },
 
 
 
 
                     { type: "textMessage", text: "Agora é minha vez de agir.", speaker: "Bancário" },
-                    { type: "textMessage", text: "Vou salvar Banéstia com meus novos poderes.", speaker: "Bancário" },
+                    { type: "textMessage", text: "Vou salvar Banéstia com meus novos poderes!", speaker: "Bancário" },
                     { who: "hero", type: "throwProjectile", direction: "right", speed: 0.4, distance: 7, src: "/images/icons/laser.png" },
 
                     {
@@ -1339,7 +1345,7 @@ window.OverworldMap = {
                     { who: "enemy4", type: "die" },
 
 
-                    { type: "textMessage", text: "Ele conseguiu, Banéstia foi salva.", speaker: "Exército" },
+                    { type: "textMessage", text: "Ele conseguiu! Banéstia foi salva!", speaker: "Exército" },
                     { type: "textMessage", text: "Nós vamos treinar para ajudar com as demandas de forma mais eficiente.", speaker: "Exército" },
                     { type: "textMessage", text: "Eu ajudarei vocês com essa tarefa.", speaker: "Bancário" },
 
@@ -1429,7 +1435,7 @@ window.OverworldMap = {
         [utils.asGridCoord(51, 24)]: [{
                 events: [
                     { type: "textMessage", text: "Banéstia nos dias atuais...", speaker: "Narrador" },
-                    { type: "textMessage", text: "Banéstia agora tem um exército treinado para resolver as demandas", speaker: "Bancário" },
+                    { type: "textMessage", text: "Banéstia agora tem um exército treinado para resolver as demandas de forma mais ágil.", speaker: "Bancário" },
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "walk", direction: "left" },
@@ -1438,7 +1444,7 @@ window.OverworldMap = {
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "stand", direction: "down", time:800 },
-                    { type: "textMessage", text: "O mundo continua evoluindo e as demanda vão mudando.", speaker: "Bancário" },
+                    { type: "textMessage", text: "O mundo continua evoluindo e as demandas vão mudando.", speaker: "Bancário" },
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "walk", direction: "left" },
@@ -1446,20 +1452,20 @@ window.OverworldMap = {
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "stand", direction: "down", time:800 },
-                    { type: "textMessage", text: "Em Banéstia não ficamos mais parados no tempo.", speaker: "Bancário" },
+                    { type: "textMessage", text: "Em Banéstia, não ficamos mais parados no tempo.", speaker: "Bancário" },
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "stand", direction: "down", time:800 },
-                    { type: "textMessage", text: "Não perca os próximos capítulos, temos uma nova arma secreta.", speaker: "Bancário" },
+                    { type: "textMessage", text: "Não perca os próximos capítulos! Temos uma nova arma secreta.", speaker: "Bancário" },
                     { who: "hero", type: "walk", direction: "left" },
-                    { type: "textMessage", text: "Ah não, a arma secreta fugiu de novo.", speaker: "Bancário" },
+                    { type: "textMessage", text: "Ah não! A arma secreta fugiu de novo.", speaker: "Bancário" },
                     { who: "sabia", type: "walk", direction: "left" },
                     { who: "sabia", type: "walk", direction: "left" },
                     { who: "sabia", type: "walk", direction: "left" },
-                    { type: "textMessage", text: "Volta aqui Sab.ia.", speaker: "Bancário" },
+                    { type: "textMessage", text: "Volta aqui Sab.ia!", speaker: "Bancário" },
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "walk", direction: "left" },
                     { who: "hero", type: "walk", direction: "left" },
